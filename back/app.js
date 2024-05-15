@@ -1,4 +1,4 @@
-import express from 'express';
+/**import express from 'express';
 import morgan from 'morgan';
 import paisesRoutes from './routes/paises.routes.js'
 import cors  from 'cors';
@@ -11,3 +11,4 @@ app.use(express.json());
 app.use('/v1', paisesRoutes)
 
 export default app;
+*/
