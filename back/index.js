@@ -1,4 +1,4 @@
-import {connectDB} from './db.js'
+//import {connectDB} from './db.js'
 import express from 'express';
 import morgan from 'morgan';
 import paisesRoutes from './routes/paises.routes.js'
@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('/v1', paisesRoutes)
 
 const PORT =process.env.PORT || 3000;
-connectDB();
+//connectDB();
 //pega esto en tu archivo index del back y subis los cambios 
 
 app.get("/", (req, res) => {
