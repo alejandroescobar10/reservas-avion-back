@@ -13,11 +13,6 @@ app.use('/v1', paisesRoutes)
 
 const PORT =process.env.PORT || 3000;
 connectDB();
-
-app.listen(PORT, ()=>{
-    console.log(`Server is running on port ${PORT}`);
-})
-
 //pega esto en tu archivo index del back y subis los cambios 
 
 app.get("/", (req, res) => {
@@ -33,3 +28,7 @@ app.get("/", (req, res) => {
   `;
   res.send(htmlResponse);
 });
+
+app.listen(PORT, ()=>{
+    console.log(`Server is running on port ${PORT}`);
+})
